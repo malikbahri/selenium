@@ -60,6 +60,7 @@ public class Recherchegoogleexemple {
 			}
 		else { System.out.println("test ko");
 		}
+		driver.close();
 		}
 		
 	}
