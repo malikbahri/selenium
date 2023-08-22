@@ -7,8 +7,8 @@ Feature: Recherche google
   Scenario: recherche pays
     Given ouvrir navigateur1
     And ouvrir URL google "https://www.google.com/"
-    When saisir le mot "Tunisie"
+    When saisir le mot "Algérie"
     And cliquer sur entre
-    Then verifier que la phrase contient le mot "resultat"
+    Then verifier que la phrase contient le mot "résultats"
 
  
