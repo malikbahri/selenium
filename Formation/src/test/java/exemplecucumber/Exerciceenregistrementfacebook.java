@@ -113,11 +113,21 @@ public class Exerciceenregistrementfacebook {
 
 	}
 
-	@When("choisir le genre")
-	public void choisir_le_genre() {
-		WebElement genre;
-		genre = driver.findElement(By.xpath("//label[normalize-space()='Homme']"));
-		genre.click();
+	@When("choisir le genre {string}")
+	public void choisir_le_genre(String string) {
+		if (string.equals("Homme")) {
+			WebElement genre;
+			genre = driver.findElement(By.xpath("//label[normalize-space()='Homme']"));
+			genre.click();
+		} else if (string.equals("Femme")) {
+			WebElement genre;
+			genre = driver.findElement(By.xpath("//label[normalize-space()='Femme']"));
+			genre.click();
+		} else {
+			WebElement genre;
+			genre = driver.findElement(By.xpath("//label[normalize-space()='Personnalisé']"));
+			genre.click();
+		}
 
 	}
 
