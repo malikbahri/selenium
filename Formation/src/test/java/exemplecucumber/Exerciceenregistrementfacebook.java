@@ -142,6 +142,7 @@ public class Exerciceenregistrementfacebook {
 	@Then("écrire le message que le compte a été créer avec succès")
 	public void écrire_le_message_que_le_compte_a_été_créer_avec_succès() {
 		System.out.println("le compte a été créer avec succès");
+		driver.close();
 
 	}
 

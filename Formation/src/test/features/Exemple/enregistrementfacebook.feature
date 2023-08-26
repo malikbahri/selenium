@@ -16,7 +16,7 @@ Feature: Inscription sur facebook
     And choisir le chiffre du jour de naissance "1"
     And choisir le mois de naissance "jan"
     And choisir année de naissance "1986"
-    And choisir le genre "Femme"
+    And choisir le genre "Homme"
     And cliquer sur le bouton inscrire
     
     Then écrire le message que le compte a été créer avec succès
